@@ -1,0 +1,22 @@
+<!doctype html>
+<script src="https://en.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+
+function getAverageAge(arr){
+    //Math.round to round to nearest integer
+    return Math.round((arr.reduce((total, current) => total + current.age, 0) / arr.length));
+}
+
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 36 };
+
+let arr = [ john, pete, mary ];
+
+alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+</script>
+
+</html>
