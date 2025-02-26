@@ -1,0 +1,25 @@
+<!doctype html>
+<script src="https://en.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+
+function unique(arr) {
+  /* your code */
+  let uniqueArray = [];
+  arr.forEach(element => {
+    if(!uniqueArray.includes(element)){
+      uniqueArray.push(element);
+    }
+  });
+  return uniqueArray;
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) ); // Hare, Krishna, :-O
+
+</script>
+
+</html>
